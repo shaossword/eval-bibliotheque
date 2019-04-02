@@ -1,0 +1,49 @@
+nav {
+    height: 100px;
+    background-color: aqua;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    list-style: none;
+}
+
+main {
+    background-color: blue;
+    margin: 2%;
+    padding: 1%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+article {}
+
+article.gauche {
+    background-color: chartreuse;
+    margin-right: 10%;
+}
+
+article.droite {
+    background-color: teal;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+footer {
+    height: 100px;
+    background-color: brown;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    list-style: none;
+}
+
+footer ul li a {
+    margin: 1%;
+}
