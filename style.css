@@ -1,5 +1,6 @@
+/*********nav******/
+
 nav {
-    height: 100px;
     background-color: aqua;
 }
 
@@ -9,18 +10,25 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/********menu******/
+
 main {
     background-color: blue;
     margin: 2%;
     padding: 1%;
 }
 
-section {
+section.menu {
     display: grid;
     grid-template-columns: 15% 85%;
 }
-
-article {}
 
 article.gauche {
     background-color: chartreuse;
@@ -33,8 +41,48 @@ article.droite {
     grid-template-columns: 33% 33% 33%;
 }
 
+.droite p {
+    background-color: aqua;
+    visibility: hidden;
+    position: absolute;
+}
+
+.droite img:hover+p {
+    width: 400px;
+    background-color: blueviolet;
+    visibility: visible;
+}
+
+.droit div img {
+    position: relative;
+}
+
+
+/******inscription******/
+
+.connection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.inscription .nom {
+    width: 300px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.formulaire .bouton {
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+
+/******footer********/
+
 footer {
-    height: 100px;
     background-color: brown;
 }
 
@@ -44,6 +92,18 @@ footer ul {
     list-style: none;
 }
 
+footer ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 footer ul li a {
     margin: 1%;
+    font-size: 150%;
+}
+
+footer ul li.logo {
+    display: flex;
+    flex-direction: row;
 }
